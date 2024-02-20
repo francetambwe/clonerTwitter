@@ -1,11 +1,7 @@
-import home from "./home"
-import toptwitter from "./toptwitter"
+import Header from "./component/header/header"
 
-export default function Header () {
-    return (
-        < div className="header">
-            <Home />
-            <TopTwitter />
-        </div>
-    )
+export default function Timeline() {
+    return <div className="timeline">
+        <Header/>
+    </div>
 }
