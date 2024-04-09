@@ -1,5 +1,5 @@
-import Tweet from './tweet.jsx';
-import {data}  from '../Data/Data.jsx';
+import Tweet from './Tweet';
+import {data}  from '../../Data/Data';
 
 export default function Tweets (){
     

@@ -1,21 +1,17 @@
-import TweetEditor from "./composants/TweetEditor/TweetEditor.jsx";
-import Header from "./composants/Header/Header.jsx";
-import Tweets from "./composants/Tweets/tweets.jsx";
-import Sidebar from "./sidebar/sidebar.jsx";
-import './style.css';
-// import Searchbox from "./searchbox/searchbox.jsx";
-function Timeline() {
+import TweetEditor from "./composants/TweetEditor/TweetEditor"
+import Header from "./composants/Header/Header" 
+import Tweets from "./composants/Tweets/Tweets/"
+
+function Timeline (){
+
   return (
     <>
-      <div></div>
-      <Sidebar/>
-      <div className="timeline">
-        <Header />
-        <TweetEditor />
-        <Tweets />
-      </div>
-      <div></div>
+    <div className='timeline'>
+      <Header />
+      <TweetEditor/>
+      <Tweets />
+    </div>
     </>
-  );
+  )
 }
-export default Timeline;
+export default Timeline 
