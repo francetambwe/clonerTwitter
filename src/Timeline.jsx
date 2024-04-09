@@ -3,6 +3,7 @@ import Header from "./composants/Header/Header.jsx";
 import Tweets from "./composants/Tweets/tweets.jsx";
 import Sidebar from "./sidebar/sidebar.jsx";
 import './style.css';
+// import Searchbox from "./searchbox/searchbox.jsx";
 function Timeline() {
   return (
     <>

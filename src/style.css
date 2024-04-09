@@ -1,7 +1,8 @@
 .sidebar {
           font-family: 'Inter', sans-serif;
-          width: 200px;
+          width: 150px;
           height: 140px;
+          position: relative;
 
 }
 
