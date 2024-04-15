@@ -1,18 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 
-body {
-    background-color: black;
-    color: white;
-    margin: 0 auto;
-    max-width: 1800px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#root {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+@layer component {
+    body {
+        @apply bg-black text-white m-[0_auto]; 
+    }
+
+    #root {
+        @apply w-full flex justify-between;
+    }
+
+    .timeline {
+        @apply flex-[0_0_50%] border-x border-solid border-[#2F3336]
+    }
+    .header {
+        @apply px-6 py-4 flex items-center justify-between border-b border-[#2f3336];
+      }
+
+      .top-tweets {
+        @apply w-6 h-auto;
+      }
+      .page-title {
+        @apply text-xl font-bold;
+      }
 }
+/* 
+
 
 .timeline {
     flex: 0 0 50%;
@@ -49,9 +66,9 @@ body {
 }
 
 .avatar {
-    flex: 0 0 70px;
+    flex: 0 0 70px; */
     /*padding: 0 rem;*/
-}
+/* }
 
 .avatar img {
     max-width: 100%;
@@ -87,7 +104,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     /*padding: 0.8rem 0;*/
-    gap: 1rem;
+    /* gap: 1rem;
 }
 
 .tweet-editor-actions button {
@@ -117,7 +134,7 @@ body {
 .tweet-avatar {
     /*height: 70px;*/
     /*width: 70px;*/
-    flex: 0 0 70px;
+    /* flex: 0 0 70px;
 }
 
 .tweet-avatar img {
@@ -208,7 +225,7 @@ body {
 /* Espace de actions hover */
 
 
-
+/* 
 .tweet-action:hover>img {
     transition: 100ms;
     border: solid 1px  ;
@@ -245,4 +262,4 @@ body {
     }
 h2.not-found-text{
     margin-left: 40rem;
-    }
+    }  */
